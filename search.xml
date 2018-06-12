@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[出口]]></title>
+    <url>%2F2018%2F06%2F12%2Fexit-1%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[markdown_syntax]]></title>
+    <url>%2F2018%2F06%2F12%2Fmarkdown-syntax%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[知识图谱中的关系预测模型-二维卷积神经网络词向量]]></title>
+    <url>%2F2018%2F06%2F12%2Fcnn_kge%2F</url>
+    <content type="text"><![CDATA[在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语言语义的问题，而在知识图谱中，知识作为实体-关系-实体的三元组模式，在知识图谱解决关系预测这个问题的时候卷积神经网络可以起到很好的作用，因为关系和实体是相互依存的关系。他们之间的关系不再是语言模型中严格的词序关系，而是相互之间对等的关系，因此作者想到了使用连接的方式将他们链接起来，然后通过卷积神经网络学习实体-关系之间的特征，根据根据这些特征学习模型的训练参数，最终使用训练好的模型测试训练结果。 $$\sum$$ 每一个输入实体与一个高维的向量相关联，或者使用的是’one-hot’的索引向量或者’n-hot’的特征向量。我们使用$\chi_{e_1}$, $\chi_{e_2}$表示实体$e_1$, $e_2$。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F06%2F12%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
