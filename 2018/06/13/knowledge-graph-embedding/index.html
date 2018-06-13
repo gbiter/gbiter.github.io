@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语言语义的问">
+<meta name="description" content="前言  在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语">
 <meta name="keywords" content="CNN,Embedding,KG">
 <meta property="og:type" content="article">
 <meta property="og:title" content="知识图谱中的关系预测模型-二维卷积神经网络词向量">
-<meta property="og:url" content="http://yoursite.com/2018/06/12/cnn_kge/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/06/13/knowledge-graph-embedding/index.html">
 <meta property="og:site_name" content="Kindler&#39;s Blog">
-<meta property="og:description" content="在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语言语义的问">
+<meta property="og:description" content="前言  在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-13T02:25:40.385Z">
+<meta property="og:updated_time" content="2018-06-13T03:14:04.475Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="知识图谱中的关系预测模型-二维卷积神经网络词向量">
-<meta name="twitter:description" content="在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语言语义的问">
+<meta name="twitter:description" content="前言  在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语">
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/12/cnn_kge/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/13/knowledge-graph-embedding/"/>
 
 
 
@@ -297,7 +297,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/12/cnn_kge/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/13/knowledge-graph-embedding/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kindler A">
@@ -326,8 +326,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-12T15:34:17+08:00">
-                2018-06-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-13T11:11:35+08:00">
+                2018-06-13
               </time>
             
 
@@ -364,8 +364,11 @@
       
 
       
-        <p>在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语言语义的问题，而在知识图谱中，知识作为实体-关系-实体的三元组模式，在知识图谱解决关系预测这个问题的时候卷积神经网络可以起到很好的作用，因为关系和实体是相互依存的关系。他们之间的关系不再是语言模型中严格的词序关系，而是相互之间对等的关系，因此作者想到了使用连接的方式将他们链接起来，然后通过卷积神经网络学习实体-关系之间的特征，根据根据这些特征学习模型的训练参数，最终使用训练好的模型测试训练结果。</p>
+        <p><strong> 前言 </strong></p>
+<p>在语言模型中传统的方式都是使用马尔科夫或者隐马尔科夫模型来对语言建模，随着神经网络的兴起，循环神经网络在语言处理中发挥着举足轻重的作用，这两种模型，马尔科夫模型和循环神经网络，可以从语言的语序关系中根据上一时刻的词义，词意，词性等学习之前状态的信息来预测下一个单词或者词组可能出现的概率，语言由多个相互联系的词序组成，马尔科夫模型和RNN正好可以满足这种需求，很少有人尝试使用CNN来解决语言语义的问题，而在知识图谱中，知识作为实体-关系-实体的三元组模式，在知识图谱解决关系预测这个问题的时候卷积神经网络可以起到很好的作用，因为关系和实体是相互依存的关系。他们之间的关系不再是语言模型中严格的词序关系，而是相互之间对等的关系，因此作者想到了使用连接的方式将他们链接起来，然后通过卷积神经网络学习实体-关系之间的特征，根据根据这些特征学习模型的训练参数，最终使用训练好的模型测试训练结果。</p>
+<p>已存在的模型DistMult(Yang et al. 2015)也是一种知识图谱中的关系预测模型，DistMult是一个浅层模型，可以学习到的参数有限，每个参数就代表一个特征，要想使得模型能具有表现力，只能是增加特征，而增加特征就要使用学习更多的参数，这样就会增加词向量的维度，这样的话对于更大规模的知识图谱，这种方式就不会很理想。要解决大规模的问题，一方面需要提高参数的利用率，另一方面选择一种更快的计算操作，而卷积就可以满足这种要求。</p>
 <p>每一个输入实体与一个高维的向量相关联，或者使用的是’one-hot’的索引向量或者’n-hot’的特征向量。我们使用$\chi_{e_1}$, $\chi_{e_2}$表示实体$e_1$, $e_2$。</p>
+<p>Yang B, Yih W, He X, et al. Embedding Entities and Relations for Learning and Inference in Knowledge Bases[J]. eprint arXiv:1412.6575, 2015.</p>
 
       
     </div>
@@ -386,7 +389,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2018/06/12/cnn_kge/" title="知识图谱中的关系预测模型-二维卷积神经网络词向量">http://yoursite.com/2018/06/12/cnn_kge/</a>
+    <a href="http://yoursite.com/2018/06/13/knowledge-graph-embedding/" title="知识图谱中的关系预测模型-二维卷积神经网络词向量">http://yoursite.com/2018/06/13/knowledge-graph-embedding/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -418,8 +421,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/12/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/06/12/exit-1/" rel="next" title="出口">
+                <i class="fa fa-chevron-left"></i> 出口
               </a>
             
           </div>
@@ -427,10 +430,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/12/markdown-syntax/" rel="prev" title="markdown_syntax">
-                markdown_syntax <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
