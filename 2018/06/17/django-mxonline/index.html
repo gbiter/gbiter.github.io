@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="django," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kindler&#39;s Blog">
-<meta property="og:url" content="http://gbiter.github.io/categories/杂记/index.html">
+<meta name="description" content="启动123python manage.py startproject project-name # project-name表示项目的名称，整个项目的名称python manage.py startapp app-name # 在项目中新建一个app，app-name是新建的应用的名称python manage.py runserver # 运行项目，从manage.py作为启动文件运行 首先介绍">
+<meta name="keywords" content="django">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Django学习笔记（一）">
+<meta property="og:url" content="http://gbiter.github.io/2018/06/17/django-mxonline/index.html">
 <meta property="og:site_name" content="Kindler&#39;s Blog">
+<meta property="og:description" content="启动123python manage.py startproject project-name # project-name表示项目的名称，整个项目的名称python manage.py startapp app-name # 在项目中新建一个app，app-name是新建的应用的名称python manage.py runserver # 运行项目，从manage.py作为启动文件运行 首先介绍">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-22T02:04:52.511Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kindler&#39;s Blog">
+<meta name="twitter:title" content="Django学习笔记（一）">
+<meta name="twitter:description" content="启动123python manage.py startproject project-name # project-name表示项目的名称，整个项目的名称python manage.py startapp app-name # 在项目中新建一个app，app-name是新建的应用的名称python manage.py runserver # 运行项目，从manage.py作为启动文件运行 首先介绍">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://gbiter.github.io/categories/杂记/"/>
+  <link rel="canonical" href="http://gbiter.github.io/2018/06/17/django-mxonline/"/>
 
 
 
 
 
-  <title>分类: 杂记 | Kindler's Blog</title>
+  <title>Django学习笔记（一） | Kindler's Blog</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,55 +283,198 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>杂记<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gbiter.github.io/2018/06/17/django-mxonline/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kindler A">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kindler's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/06/12/exit-1/" itemprop="url">
-              
-                <span itemprop="name">出口</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Django学习笔记（一）</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-12T15:54:29+08:00"
-              content="2018-06-12" >
-          06-12
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-17T15:18:42+08:00">
+                2018-06-17
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/django/" itemprop="url" rel="index">
+                    <span itemprop="name">django</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python manage.py startproject project-name # project-name表示项目的名称，整个项目的名称</span><br><span class="line">python manage.py startapp app-name # 在项目中新建一个app，app-name是新建的应用的名称</span><br><span class="line">python manage.py runserver # 运行项目，从manage.py作为启动文件运行</span><br></pre></td></tr></table></figure>
+<p>首先介绍两个全局的类，这两个类是每一个应用的继承的基础类和应用的配置文件的类，分别是Apps和AppConfig类，这两个类分别在django.apps.regeristy.py中和django.apps.config.py中定义。Apps类定义了每一个应用的名称，所属的model等基本的信息，通过app的名称注册model，设置model，获取model，应用是否加载就绪，还有获取app的配置信息，注册配置信息，设置配置信息。而这些配置信息都在AppConfig这个类中定义。这个模块定义了如何加载所有的已经注册了的apps，如果这些apps不存在，如何去重新创建。</p>
+<h4 id="程序流程"><a href="#程序流程" class="headerlink" title="程序流程"></a>程序流程</h4><ol>
+<li>注册项目的环境变量模块，之后调用<em>execute_from_command_line(sys.argv)</em> 启动项目</li>
+<li>在<em>execute_from_command_line</em>中构造<em>ManageUtility</em>的类，这个类主要是管理基本的输出一些本本的命令行使用手册，其次调用这个类的<em>execute</em>函数，在这个函数主要调用<em>django.setup</em>来启动<em>django</em>。</li>
+<li>在<em>setup</em>中注册项目的<em>settings</em>文件中定义的<em>apps</em>，这些app的信息通过刚开始的环境变量找到这个<em>settings</em>文件，从而读取<em>settings</em>文件中的已创建的<em>app</em>应用。</li>
+<li>以上就是<em>django</em>的启动。</li>
+</ol>
+<h2 id="Django的Core模块"><a href="#Django的Core模块" class="headerlink" title="Django的Core模块"></a>Django的Core模块</h2><h3 id="checks模块"><a href="#checks模块" class="headerlink" title="checks模块"></a>checks模块</h3><h3 id="cache模块"><a href="#cache模块" class="headerlink" title="cache模块"></a>cache模块</h3><h4 id="backends-base"><a href="#backends-base" class="headerlink" title="backends.base"></a>backends.base</h4><h3 id="files模块"><a href="#files模块" class="headerlink" title="files模块"></a>files模块</h3><h3 id="handler模块"><a href="#handler模块" class="headerlink" title="handler模块"></a>handler模块</h3><h3 id="mails模块"><a href="#mails模块" class="headerlink" title="mails模块"></a>mails模块</h3><h3 id="Management模块"><a href="#Management模块" class="headerlink" title="Management模块"></a>Management模块</h3><h3 id="Serializer模块"><a href="#Serializer模块" class="headerlink" title="Serializer模块"></a>Serializer模块</h3><h3 id="Servers模块"><a href="#Servers模块" class="headerlink" title="Servers模块"></a>Servers模块</h3><h3 id="Paginator模块"><a href="#Paginator模块" class="headerlink" title="Paginator模块"></a>Paginator模块</h3><h3 id="exceptions模块"><a href="#exceptions模块" class="headerlink" title="exceptions模块"></a>exceptions模块</h3><h3 id="Signals模块"><a href="#Signals模块" class="headerlink" title="Signals模块"></a>Signals模块</h3><h3 id="Signing模块"><a href="#Signing模块" class="headerlink" title="Signing模块"></a>Signing模块</h3><h3 id="validator模块"><a href="#validator模块" class="headerlink" title="validator模块"></a>validator模块</h3><h3 id="wsgi模块"><a href="#wsgi模块" class="headerlink" title="wsgi模块"></a>wsgi模块</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Kindler A
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://gbiter.github.io/2018/06/17/django-mxonline/" title="Django学习笔记（一）">http://gbiter.github.io/2018/06/17/django-mxonline/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://gbiter.github.io" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/django/" rel="tag"># django</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/15/world-cup-russia-saudi/" rel="next" title="2018世界杯">
+                <i class="fa fa-chevron-left"></i> 2018世界杯
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/27/trend-challenge-nlp/" rel="prev" title="自然语言处理的现状">
+                自然语言处理的现状 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -334,6 +482,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -354,8 +506,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -415,6 +576,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#启动"><span class="nav-number">1.</span> <span class="nav-text">启动</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#程序流程"><span class="nav-number">1.0.1.</span> <span class="nav-text">程序流程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Django的Core模块"><span class="nav-number">2.</span> <span class="nav-text">Django的Core模块</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#checks模块"><span class="nav-number">2.1.</span> <span class="nav-text">checks模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cache模块"><span class="nav-number">2.2.</span> <span class="nav-text">cache模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#backends-base"><span class="nav-number">2.2.1.</span> <span class="nav-text">backends.base</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#files模块"><span class="nav-number">2.3.</span> <span class="nav-text">files模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#handler模块"><span class="nav-number">2.4.</span> <span class="nav-text">handler模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mails模块"><span class="nav-number">2.5.</span> <span class="nav-text">mails模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Management模块"><span class="nav-number">2.6.</span> <span class="nav-text">Management模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Serializer模块"><span class="nav-number">2.7.</span> <span class="nav-text">Serializer模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Servers模块"><span class="nav-number">2.8.</span> <span class="nav-text">Servers模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Paginator模块"><span class="nav-number">2.9.</span> <span class="nav-text">Paginator模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#exceptions模块"><span class="nav-number">2.10.</span> <span class="nav-text">exceptions模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Signals模块"><span class="nav-number">2.11.</span> <span class="nav-text">Signals模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Signing模块"><span class="nav-number">2.12.</span> <span class="nav-text">Signing模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#validator模块"><span class="nav-number">2.13.</span> <span class="nav-text">validator模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#wsgi模块"><span class="nav-number">2.14.</span> <span class="nav-text">wsgi模块</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -549,6 +726,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
